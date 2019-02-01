@@ -3,5 +3,6 @@ from . import views
 
 
 urlpatterns = [
- path('events',views.EventsList.as_view(),name='eventlist'),
+ path('avesh/events',views.EventsList.as_view(),name='eventlist'),
+ path('participant/enroll',views.EventEnrolled.as_view(),name="eventenrolled"),
 ]

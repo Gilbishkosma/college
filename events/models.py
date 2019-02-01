@@ -18,6 +18,12 @@ class Participant(models.Model):
 	event = models.ForeignKey(Events,on_delete=models.CASCADE,related_name="participate_event")
 	payment = models.BooleanField(default=False)
 
+	def __str__(self):
+		return "{}:{}".format(self.user,self.event)
+
 class Coordinator(models.Model):
 	user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
 	event = models.ForeignKey(Events,on_delete=models.CASCADE,related_name="coordinate_event")
+
+	def __str__(self):
+		return "{}:{}".format(self.user,self.event)

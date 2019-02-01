@@ -17,3 +17,9 @@ class SignupSerializer(serializers.ModelSerializer):
             if not status:
                 raise serializers.ValidationError(msg)
         return t_data
+
+
+class UserSerializer(serializers.ModelSerializer):
+      class Meta:
+        model = CustomUser
+        fields = ('id','username','College','email')

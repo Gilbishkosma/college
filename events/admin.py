@@ -4,3 +4,4 @@ from .models import Events,Participant,Coordinator
 
 
 admin.site.register(Events)
+admin.site.register(Participant)

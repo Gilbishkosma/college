@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "d30d21a9-3e9a-4ed2-9795-19747d433929",
+		"name": "avesh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserProfile(GET,POST)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token X39TcgmYHLrHiCylgQiFunb0dE278rWcg8r5tT4D",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n\t\"username\":\"bunn\",\n\t\"college\":\"GEC Bilaspur\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EventEnroll(GET,POST)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token X39TcgmYHLrHiCylgQiFunb0dE278rWcg8r5tT4D"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"event_id\":3\n\t\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/participant/enroll",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"participant",
+						"enroll"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"user_data\":{\n  \"username\":\"aquaman\",\n  \"password\":\"bunty1234\",\n  \"College\":\"Gec bhilai\"\n }\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"user_data\":{\n   \"username\":\"aquaman\",\n   \"password\":\"bunty1234\"\n }\n\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
